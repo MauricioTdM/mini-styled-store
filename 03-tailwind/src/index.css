@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-background: hsl(210 17% 98%);
+    --color-text: hsl(210 10% 23%);
+    --color-border: hsl(210 14% 89%);
+    --color-card-bg: hsl(0 0% 100%);
+    --color-primary: hsl(211 100% 50%);
+    --color-primary-hover: hsl(211 100% 35%);
+    
+    --shadow-color: hsl(220 3% 15%);
+    --shadow-elevation-low: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34), 0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34), 1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
+    --shadow-elevation-medium: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36), 0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36), 2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36), 5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+    
+    --spacing-md: 16px;
+    --border-radius: 8px;
+  }
+
+  .dark {
+    --color-background: hsl(240 10% 4%);
+    --color-text: hsl(210 17% 98%);
+    --color-border: hsl(240 4% 27%);
+    --color-card-bg: hsl(240 5% 12%);
+    --color-primary: hsl(212 100% 62%);
+    --color-primary-hover: hsl(212 100% 72%);
+    --shadow-color: hsl(220 40% 2%);
+  }
+}
+
+@theme {
+  --color-background: hsl(var(--color-background));
+  --color-text: hsl(var(--color-text));
+  --color-border: hsl(var(--color-border));
+  --color-card-bg: hsl(var(--color-card-bg));
+  --color-primary: hsl(var(--color-primary));
+  --color-primary-hover: hsl(var(--color-primary-hover));
+
+  --spacing-md: var(--spacing-md);
+
+  --radius-lg: var(--border-radius);
+
+  --shadow-low: var(--shadow-elevation-low);
+  --shadow-medium: var(--shadow-elevation-medium);
+
+  --breakpoint-xs: 481px;
+  --breakpoint-sm: 769px;
+  --breakpoint-md: 1024px;
+  --breakpoint-lg: 1025px;
+}

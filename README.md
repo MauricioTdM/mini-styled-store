@@ -59,6 +59,6 @@ Cada pasta é um projeto Vite autônomo. Para executar qualquer uma das versões
 
 ## Stack Tecnológico Principal
 
-- **React 18**
+- **React**
 - **Vite**
 - **Context API** (para o gerenciador de tema)
